@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+.letras{
+    text-shadow: 0px 5px yellow;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'helvetica neue', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: black;
+   
+}

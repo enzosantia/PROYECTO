@@ -1,42 +1,102 @@
-
 body {
-      text-align: center;
-      background: wheat;
-      padding-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    padding: 0 auto;
+    animation: color 20s linear infinite;
+    
+    background-color: #00000089;
 }
-
-.boton{
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        text-decoration: none;
-        font-family: 'helvetica neue', Arial, Helvetica, sans-serif;
-        display: inline-block;
-        color: aliceblue;
-        background: coral;
-        padding: 10px 20px;
-        white-space: nowrap;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 100px;
-        margin: 10px 5px;
-        margin-top: 50px;
-        -webkit-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out ;
-        transition: all 0.2s ease-in-out;
+.fondo{
+    position: absolute;
+    padding: 0%;
+    margin: 0%;
+    right: 0%;
 }
+.botones { 
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: #fff;
+    background: #7F8C8D;
+    padding: 5px 100px;
+    border-radius: 100px;
+    margin: 10px 5px;
+    transition: all 0,2 ease-in-out;
+    transition: all 0.6s ease;
+    background-color:#4d0581;
+    border: 2px solid rgb(134, 42, 155);
+}
+.botones:hover{
+    background-color:#7006bb;
+    box-shadow: #ba5de2 2px 2px 10px 2px;
+    
+}
+.logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+    margin-left: 35.5%;
+    box-shadow: 5px 5px 5px 5px;
+    transition: all 0.6s ease;
+    border-radius: 20px;
+    background-color: #4d0581;
+    
+}
+.logo:hover{
+    box-shadow: #ba5de289 5px 5px 5px 5px;
+    cursor: pointer;
+    background-color: #e369f9a0;
+}
+.tablero {
+    position: relative;
+    background-color: grey;
+    display:inline-block;
+    height: 450px;
+    width: 900px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid rgb(134, 42, 155);
 
-    .azul{
-        background: rgb(55, 82, 133);
-        box-shadow: 0px 5px 0px 0px rgb(55, 82, 133);
-    }
-
-    .TABLERO {
-        display: inline-block;
-        color: aliceblue;
-        background: white;
-        margin-top: 5px;
-        height: 450px;
-        padding: 10px 400px;
-    }
+    background: url(../Imagenes/Fondo.jpg);
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    animation: fondo 60s linear infinite;
+}
+.barra1{
+        position: absolute;
+        float: right;
+        margin: 20px;
+        width: 20px;
+        height: 150px;
+        background-color: rgba(220, 220, 220, 0.51);
+        animation: barra1 5s infinite alternate running;
+        border-radius: 20px;
+        
+}
+.barra2{
+    
+    margin: 20px;
+    margin-top: 30%;
+    float:right;
+    width: 20px;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.51);
+    animation: barra2 5s infinite alternate running;
+    border-radius: 20px;
+    
+}
+.pelota{ 
+    position: relative;
+    margin-top: 50px;
+    margin-left: 42px;
+    background-color: rgb(255, 1000, 212);
+    border: solid black 1px;
+    box-shadow: #00000089 2px 2px 1px 1px;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    animation: pelota 5s linear infinite; 
+}

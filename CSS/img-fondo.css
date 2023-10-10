@@ -1,0 +1,70 @@
+
+.im1{
+    background-image: url('../imagenes/asteroide\ 1.png');
+    margin: 0;
+
+    width: 160px;
+    height: 130px;
+    position: absolute;
+    background-size: cover;
+    animation: animacion-img1 5s linear infinite ;
+}
+
+.im2{
+    background-image: url('../imagenes/asteroide\ 2.png');
+    width: 59.75px;
+    height: 45px;
+    position: absolute;
+    background-size: cover;
+    animation: animacion-img2 30s linear infinite;
+}
+
+.im3{
+    background-image: url('../imagenes/astro.png');
+    width: 75px;
+    height: 80px;
+    position: absolute;
+    background-size: cover;
+    animation: animacion-img3 4s linear infinite;
+}
+
+@keyframes animacion-img1 {
+    0%{
+        transform: perspective(200px) translateX(-700px) ;
+    }
+    
+    100%{
+        transform: perspective(200px) translateX(1000px);
+    }
+}
+
+@keyframes animacion-img2 {
+    0%{
+        transform: perspective(200px) translateX(800deg) ;
+    }
+    
+    100%{
+        transform: perspective(200px) translateX(1000px);
+    }
+}
+
+@keyframes animacion-img3 {
+    0%{
+        transform: perspective(200px) rotateY(10deg) translateX(800deg) ;
+    }
+    
+    100%{
+        transform: perspective(200px) rotateY(10deg) translateX(1000px);
+    }
+}
+
+
+/*.lololo{
+    -ms-flex-order: var(classDerecha);
+    -ms-grid-row-span sigue a un objetivo
+    -ms-perspevtive-origin-x
+}
+/* .classIzquierda {
+    float: left
+    /*28 DE JUNIO PRUEBA WIDI SIN RECUPERATORIO 
+

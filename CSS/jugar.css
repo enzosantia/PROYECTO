@@ -24,11 +24,11 @@
 .score{
     margin: 0;
     padding: 0;
-    font-size: 80px;
+    font-size: 5vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     background-color: rgba(137, 92, 199, 0.471);
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 60vh;
+    margin-right: 60vh;
     margin-bottom: 0;
 }

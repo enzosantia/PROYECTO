@@ -5,7 +5,7 @@
 
     width: 160px;
     height: 130px;
-    position: absolute;
+    position: relative;
     background-size: cover;
     animation: animacion-img1 5s linear infinite ;
 }
@@ -14,7 +14,7 @@
     background-image: url('../imagenes/asteroide\ 2.png');
     width: 59.75px;
     height: 45px;
-    position: absolute;
+    position: relative;
     background-size: cover;
     animation: animacion-img2 30s linear infinite;
 }
@@ -23,7 +23,7 @@
     background-image: url('../imagenes/astro.png');
     width: 75px;
     height: 80px;
-    position: absolute;
+    position: relative;
     background-size: cover;
     animation: animacion-img3 4s linear infinite;
 }
@@ -58,7 +58,63 @@
     }
 }
 
+@keyframes fondo{
+    0%{
+        background-position: 0px;
+        
+    }
+    100%{
+        background-position: -5440px;
 
+        
+    }
+}
+
+
+@keyframes barra1{
+    0%{
+        transform: translateY(270px);
+
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(270px);
+    }
+}
+
+@keyframes barra2{
+    0%{
+        transform: translateY(-250px);
+
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    51%{       
+        transform: translateY(-270px);
+        background-color: rgb(228, 255, 106);
+        box-shadow: #ccff00ba 2px 5px 5px 1px;
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+@keyframes pelota{
+    0%{
+        transform: translate(-10px,250px);
+    }
+    50%{
+        transform: translate(800px,-10px);   
+    }
+
+    100%{
+        transform: translate(-10px,250px);
+        
+    }
+}
 /*.lololo{
     -ms-flex-order: var(classDerecha);
     -ms-grid-row-span sigue a un objetivo

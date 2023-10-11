@@ -1,0 +1,14 @@
+/* Color del body de "Index.html" */
+@keyframes color{
+    0%{
+        background-color: rgb(53, 3, 61); 
+    }
+    50%{
+        background-color: rgb(33, 18, 154); 
+        
+    }
+    100%{
+        background-color: rgb(53, 3, 61); 
+        
+    }
+}

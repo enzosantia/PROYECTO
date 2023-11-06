@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pausa</title>
+    <title>Opciones</title>
+    <link rel="stylesheet" href="CSS/opciones.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/body.css">
+
 </head>
-
 <body>
-    <button>CONTINUAR</button>
-    <a href="index.html"><button>MENU</button></a>
-    <a href="reset.html"><button>RESET</button></a>
-</body>
+    <audio id="miMusica" >
+        <source src="Musica/fomdo .mp3" type="audio/mpeg">
+    </audio>
+    <div class="caja">
 
+        <p> Musica</p> 
+        <label class="fondo-boton-musica"> <!-- se usa un label para asociar el input que esta adentro-->
+            <input type="checkbox" id="musica"> <!--Un cheked que despues lo modificamos -->
+            <span class="circulo"></span> <!--la bolita que despues se va a mover -->
+        </label>
+        <p> Sonidos </p> 
+        <label class="fondo-boton-musica"> <!-- se usa un label para asociar el input que esta adentro-->
+            <input type="checkbox" id="boton"> <!--Un cheked que despues lo modificamos -->
+            <span class="circulo"></span>  <!--la bolita que despues se va a mover -->
+        </label>
+        <script src="JS/opsiones.js"></script>
+        
+    
+</div>
+
+</body>
 </html>

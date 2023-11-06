@@ -27,6 +27,7 @@
     animation: animacion-img3 4s linear infinite;
 }
 
+
 @keyframes animacion-img1 {
     0%{
         transform: perspective(200px) translateX(-700px) ;

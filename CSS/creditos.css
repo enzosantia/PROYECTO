@@ -42,7 +42,7 @@ p {
   max-width: 1080px;
   height: 800px;
   transform: perspective(200px) rotateX(14deg);
-  animation: creditos 25s linear infinite;
+  animation: creditos 30s linear infinite;
 }
 
 /*aplica color a todas las etiquetas que se marquen dentro del is*/

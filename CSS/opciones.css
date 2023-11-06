@@ -1,0 +1,55 @@
+.caja{
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;     
+    display:inline-block;
+    border-radius: 20%;
+    opacity: 50%;
+}
+p{
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fondo-boton-musica { /*Le damos tamaño al fondo del boton*/
+    position: relative;
+    display: inline-block;
+    width: 60px; 
+    height: 34px;
+    margin: 10px;
+}
+.fondo-boton-musica :hover{
+    cursor: pointer;
+}
+.circulo {
+    position: absolute;
+    top: 0; /* Ocultamos el checked */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s; /* Esta es la transición del fondo */
+    border-radius: 34px;
+}
+
+.circulo:before {
+    cursor: pointer;
+    position: absolute;
+    content: ""; /* Le damos un espacio al circulo pero que no tenga ningun contenido */
+    height: 26px; /* Bueno y aca le damos un tamaño a la bolita */
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .1s; /* transición de la bolita */
+    border-radius: 100%; /*Y aca hacemos que sea un circulito */
+}
+
+input:checked + .circulo { /*Aca estamos haciendo click al label y ahi activa el checkbox que sigue estando ahi pero oculto */
+    background-color: #db7bd8; 
+}
+
+input:checked + .circulo:before {
+    transform: translateX(26px); /* desplazamiento de la bolita */
+}

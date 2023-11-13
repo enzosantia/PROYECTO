@@ -1,7 +1,8 @@
 .tablero {
     width: 1200px;
     height: 600px;
-    margin: auto;
+    margin: 5vh auto ;
+    
 }
 
 .barra2JG {
@@ -23,15 +24,32 @@
 }
 
 .score {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
     font-size: 5vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px;
     background-color: rgba(137, 92, 199, 0.471);
-    margin-left: 60vh;
-    margin-right: 60vh;
     margin-bottom: 0;
+    border-radius: 2vh;
+    width: 20vh;
+}
+.Controles1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(137, 92, 199, 0.471);
+    margin-bottom: 0;
+    border-radius: 2vh;
+    width: 20vh;
 }
 
 .pelota {
@@ -41,6 +59,7 @@
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    top: 15vh;
-    left: 35vh;
+    top: 50%;
+    left: 50%;
 }
+
